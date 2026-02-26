@@ -41,7 +41,7 @@ import parth from './parth.jpg'
 import honest from './honest.jpeg'
 import orangecat from './orangecat.jpeg'
 import anmol from './anmol.jpeg'
-import care from './care.png'
+import care from './Care.png'
 
 
 export {
