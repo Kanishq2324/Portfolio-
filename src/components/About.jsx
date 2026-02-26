@@ -8,18 +8,19 @@ import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({index , title , icon}) => {
   return (
-    <Tilt className = "xs:w-[250px] w-full">
+    <Tilt className = "xs:w-[250px] w-full" 
+    options = {{
+            max: 45,
+            scale: 1,
+            speed: 450
+          }}>
       <motion.div 
         variants={fadeIn("right" , "spring", 0.5*index , 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px]
         shadow-card'
       >
         <div
-          options = {{
-            max: 45,
-            scale: 1,
-            speed: 450
-          }}
+          
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex
           justify-evenly items-center flex-col'
         >
@@ -37,16 +38,16 @@ const ServiceCard = ({index , title , icon}) => {
 const About = () => {
   return (
     <>
-      <motion.dev variants = {textVariant()}>
+      <motion.div variants = {textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
-      </motion.dev>
+      </motion.div>
 
       <motion.p 
       variants={fadeIn("","", 0.1 , 1)}
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-      I'm a software developer with experience in Node Js, and have enough amout of knowledge of the frameworks like ExprssJs, ReactJs, Three.js. As a Final-year Computer Science student at Delhi Technological University, I'm passionate about building software and web experiences that are both functional and visually stunning. In my spare time, I'm a beatboxer and musician who thrives on rhythm as an outlet for expression and creativity.
+      I'm a software Engineer & a Product Manager with experience in MERN, NestJs, Golang. Recently Graduated from Delhi Technological University as a Computer Science Engineer, I'm passionate about building software and web experiences that are both functional and visually stunning. In my spare time, I'm a beatboxer and musician who thrives on rhythm as an outlet for expression and creativity.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10 '>

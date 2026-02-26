@@ -23,7 +23,14 @@ import {
     NodeJs,
     express,
     care,
-    Research
+    Research,
+    KnowledgeFlow,
+    HUB,
+    figma,
+    typescript,
+    golang,
+    NestJs,
+    redis
   } from "../assets";
   
   export const navLinks = [
@@ -48,17 +55,17 @@ import {
     },
     
     {
-      title: "Content Creator",
+      title: "Product Manager",
       icon: creator,
     },
 
     {
-      title: "Beatboxer",
+      title: "Musician",
       icon: mobile,
     },
 
     {
-      title: "Guitar-Player",
+      title: "Explorer",
       icon: backend,
     },
   ];
@@ -111,6 +118,26 @@ import {
       name: "git",
       icon: git,
     },
+    {
+      name: "figma",
+      icon: figma,
+    },
+    {
+      name: "typescript",
+      icon: typescript,
+    },
+    {
+      name: "golang",
+      icon: golang,
+    },
+    {
+      name: "redis",
+      icon: redis,
+    },
+    {
+      name: "NestJs",
+      icon: NestJs,
+    },
     
   ];
   
@@ -122,8 +149,9 @@ import {
       iconBg: "#383E56",
       date: "March 2025 - September 2025",
       points: [
-        "● Designed and implemented partner-specifi c portals and integrated APIs for automated policy issuance, enhancing digital collaboration and operational efficiency.",
-        "Built and deployed a WhatsApp chatbot for partners, driving lead generation and improving lead-to-policy conversion rates.",
+        "Partner API Integrations: Led development of Partner APIs partner portals, creating BRDs, defining requirements, and driving collaboration across product, engineering, and banking teams",
+        "AI-driven WhatsApp Chatbot: Delivered an AI-driven WhatsApp Chatbot for BOI, UBI UCO with a Lead Management System, thus improving lead engagement by 30% and shortening conversion cycles through automated qualification workflows",
+        "High-Impact Product Launch: Spearheaded a major insurance product launch for PNB, achieving 1 crore+ worth of bookings in a single day, showcasing scalability and strong product-market fit"
       ],
     },
     {
@@ -185,6 +213,59 @@ import {
       live_demo_link: "https://drive.google.com/file/d/1gKi7eQT8IHAPyZNcq9B8BIVqIFwvux82/view"
     },
     {
+      name: "HUB",
+      description:
+        "Developed an AI Content Generation Platform - Built an AI-based platform that generates real-time text and images using Gemini API & ImageKit API. Reduced response latency by approximately 25% through optimized request batching and modular MERN-based architecture",
+      tags: [
+        {
+          name: "NodeJs",
+          color: "lightB-text-gradient",
+        },  
+        {
+          name: "ExpressJs",
+          color: "red-text-gradient",
+        },  
+        {
+          name: "MongoDB",
+          color: "green-text-gradient",
+        },  
+        {
+          name: "HTML",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+
+        {
+          name: "Js",
+          color: "green-text-gradient",
+        },
+        
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        }, 
+        {
+          name: "Gemini API",
+          color: "pink-text-gradient",
+        },  
+        {
+          name: "ImageKit API",
+          color: "green-text-gradient",
+        },  
+        {
+          name: "Prism",
+          color: "blue-text-gradient",
+        },   
+
+      ],
+      image: HUB,
+      source_code_link: "https://github.com/Kanishq2324/Hub",
+      live_demo_link: "https://hub-jcsd.vercel.app/"
+    },
+    {
       name: "Knowledge Flow",
       description:
         "Developed a responsive React application with seamless UI/UX.Used Express and Node for an efficient Backend and Integrated Razorpay API for payment. Implemented real-time data synchronization with MongoDB, ensuring instant information access, and maintained scalable architecture using Git for version control.",
@@ -220,9 +301,9 @@ import {
           color: "blue-text-gradient",
         },  
       ],
-      image: oole,
+      image: KnowledgeFlow,
       source_code_link: "https://github.com/Kanishq2324/Knowledge-Flow-project/tree/main",
-      live_demo_link: "https://knowledgeflow.vercel.app/"
+      live_demo_link: "https://www.knowledgeflow.tech/"
     },
     {
       name: "Modern UI/UX Website",
